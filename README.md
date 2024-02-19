@@ -1,6 +1,6 @@
-# Pix.ly
+# Pix.ly 📷
 
-Pix.ly is an image site that lets users upload images, view other images, search EXIF data, and view a photo's EXIF data. Uses AWS S3 to store and retrieve image files. Additional tech: Python, Flask, Jinja, SQLAlchemy, JS, Pillow. This project was originally built in Jan-Feb 2024 at [Rithm School](https://www.rithmschool.com/).
+Pix.ly is an image site that lets users upload images, view other images, search EXIF data, and view a photo's EXIF data. Uses AWS S3 to store and retrieve image files. Additional tech: Python, Flask, Jinja, SQLAlchemy, JS, Pillow. This project was originally built in Jan-Feb 2024 at [Rithm School](https://www.rithmschool.com/). You can find the site [here](https://www.pixly.carlmolina.com/).
 
 ## Demo
 
