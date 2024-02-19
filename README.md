@@ -1,10 +1,6 @@
 # Pix.ly
 
-Jobly is an mage site that lets users upload images, view other images, search EXIF data, and view a photo's EXIF data. Uses AWS S3 to store and retrieve image files. Additional tech: Python, Flask, Jinja, SQLAlchemy, JS, Pillow.. This project was originally built in Jan-Feb 2024 at [Rithm School](https://www.rithmschool.com/).
-
-## Component Hierarchy Design
-
-![Components Design](/jobly/public/README.drawio.png)
+Pix.ly is an image site that lets users upload images, view other images, search EXIF data, and view a photo's EXIF data. Uses AWS S3 to store and retrieve image files. Additional tech: Python, Flask, Jinja, SQLAlchemy, JS, Pillow.. This project was originally built in Jan-Feb 2024 at [Rithm School](https://www.rithmschool.com/).
 
 ## Demo
 
