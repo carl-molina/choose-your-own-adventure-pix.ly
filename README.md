@@ -16,7 +16,6 @@ Pix.ly is an image site that lets users upload images, view other images, search
 * ![Jinja](https://img.shields.io/badge/Jinja-000000?style=for-the-badge&logo=python&logoColor=white)
 * ![PostgreSQL](https://img.shields.io/badge/-PostgreSQL-336791?logo=postgresql&logoColor=white&style=flat)
 * ![ElephantSQL](https://img.shields.io/badge/-ElephantSQL-336791?logo=elephantsql&logoColor=white&style=flat)
-
 * ![Render](https://img.shields.io/badge/-Render-333333?logo=render&logoColor=white&style=flat)
 
 ## Acknowledgements
