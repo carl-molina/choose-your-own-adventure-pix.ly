@@ -12,8 +12,11 @@ Pix.ly is an image site that lets users upload images, view other images, search
 * ![SQLAlchemy](https://img.shields.io/badge/SQLAlchemy-%23FF4500.svg?style=for-the-badge&logo=database&logoColor=white)
 * ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 * ![CSS](https://img.shields.io/badge/-CSS-1572B6?logo=css3&logoColor=white&style=flat)
+* ![Flask](https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white)
+* ![Jinja](https://img.shields.io/badge/Jinja-000000?style=for-the-badge&logo=python&logoColor=white)
 * ![PostgreSQL](https://img.shields.io/badge/-PostgreSQL-336791?logo=postgresql&logoColor=white&style=flat)
 * ![ElephantSQL](https://img.shields.io/badge/-ElephantSQL-336791?logo=elephantsql&logoColor=white&style=flat)
+
 * ![Render](https://img.shields.io/badge/-Render-333333?logo=render&logoColor=white&style=flat)
 
 ## Acknowledgements
