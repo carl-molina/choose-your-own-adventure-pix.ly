@@ -1,6 +1,7 @@
 "use strict";
 
 const $resizeBtn = $("#resize-img");
+const $grayscaleBtn = $("#grayscale-img");
 const filename = $resizeBtn.data("filename");
 
 console.log('This is filename from JS: ', filename);
@@ -30,5 +31,28 @@ async function resizeImage() {
 }
 
 
+async function grayscaleImage() {
+
+  const resp = await fetch('/grayscale_image', {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({
+      filename: filename
+    })
+  });
+
+  if (!resp.ok) throw new Error('Failed to grayscale image');
+
+  location.reload();
+
+  const results = await resp.json();
+  console.log('Results from click: ', results);
+
+  return results;
+}
+
 
 $resizeBtn.on("click", resizeImage);
+$grayscaleBtn.on("click", grayscaleImage);

@@ -29,7 +29,8 @@ from s3_helpers import (
     view_photos_from_s3,
     view_filtered_photos_from_s3,
     edit_photo_and_save_to_s3,
-    col_names
+    col_names,
+    grayscale_photo_and_save_to_s3
 )
 
 app = Flask(__name__)
@@ -219,6 +220,26 @@ def resize_image():
 
     try:
         edit_photo_and_save_to_s3(filename)
+    except IntegrityError:
+        flash('Could not edit and save photo')
+
+    # return redirect(url_for('get_single_photo'))
+    return jsonify({'result': 'image resized successfully!'})
+
+
+@app.route('/grayscale_image', methods=['GET', 'POST'])
+def grayscale_image():
+    """Grayscales image"""
+
+    data = request.get_json()
+    print('This is data: ', data)
+
+    filename = data.get("filename")
+
+    print('This is photo_url: ', filename)
+
+    try:
+        grayscale_photo_and_save_to_s3(filename)
     except IntegrityError:
         flash('Could not edit and save photo')
 

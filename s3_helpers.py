@@ -187,3 +187,29 @@ def edit_photo_and_save_to_s3(filename):
     file_obj_edited.seek(0)
 
     s3.upload_fileobj(file_obj_edited, BUCKET_NAME, filename)
+
+
+def grayscale_photo_and_save_to_s3(filename):
+    """Downloads file from S3, makes photo edits, and saves file back to S3"""
+
+    print('Inside edit_photo_and_save_to_s3')
+
+    file_obj = BytesIO()
+
+    s3.download_fileobj(BUCKET_NAME, filename, file_obj)
+
+    file_obj.seek(0)
+
+    image_to_be_edited = Image.open(file_obj)
+
+    edited_image = image_to_be_edited.convert('L')
+
+    file_obj_edited = BytesIO()
+
+    # FIXME: can only resize JPEG files currently, breaks on PNG files
+    edited_image.save(file_obj_edited, format="JPEG")
+
+    # This NEEDS to be here or else photo breaks
+    file_obj_edited.seek(0)
+
+    s3.upload_fileobj(file_obj_edited, BUCKET_NAME, filename)
